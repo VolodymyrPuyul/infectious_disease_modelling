@@ -93,6 +93,7 @@ def Model(initial_cases, initial_date, N, beds_per_100k, R_0_start, k, x0, R_0_e
 external_stylesheets = [dbc.themes.BOOTSTRAP]
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+server = app.server
 app.title = "CoSim"
 
 
